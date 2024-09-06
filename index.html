@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TODO_APP</title>
+  </head>
+  <body>
+    <header>TO-DO-LIST</header>
+    <input type="text" id="item" placeholder="ITEM-NAME" />
+    <input
+      type="text"
+      id="deadline"
+      placeholder="DEADLINE"
+      onfocus="(type='date')"
+      onblur="(type='text')"
+    />
+    <select  id="priority">
+      <option disabled selected>PRIORITY</option>
+      <option value="HIGH">HIGH</option>
+      <option value="MEDIUM">MEDIUM</option>
+      <option value="lOW">LOW</option>
+    </select>
+    <button id="add_todo">ADD ITEM</button>
+    <div class="output" id="today">
+      <p>Today's TodoList</p>
+    </div>
+    <div class="output" id="future">
+      <p>Future TodoList</p>
+      
+    </div>
+    <div class="output" id="completed">
+      <p>Completed TodoList</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
